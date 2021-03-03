@@ -183,3 +183,43 @@ def training_model(model_):
     #model.summary()
     return model
 ```
+### 3-5. Training and Save the Test Results
+
+* For training, define {batch_size, epochs} as {4, 50}
+* Training is done 5 times seperately.
+* Finally, Summarize the **accuracy_score** and **confusion_matrix**
+
+```python
+def save_result(array1, array2):
+
+    n1 = np.array( [np.array([i, np.nan, np.nan]) for i in array1] ).ravel()
+    n1 = n1.reshape(15, 1)
+    n2 = np.concatenate( (array2[0],array2[1],array2[2], array2[3], array2[4]))
+    n3 = np.hstack([n2, n1])
+    df = pd.DataFrame(n3)
+    return df
+
+vgg16_tfl_nodataaugument_acc = []
+vgg16_tfl_nodataaugument_cm = []
+vgg16_tfl_nodataaugument_model = []
+for i in range(5):
+    model = training_model(transfer_learning_model(model_vgg16))
+    #X_train_augumented, y_train_augumented = data_augumentation(X_train, y_train)
+    model.fit(X_train, y_train, batch_size=4, epochs=50)#, callbacks=[es])
+
+    y_pred = np.array([np.argmax( model.predict(X_test[i:i+1]) ) for i in range(len(X_test))])
+    y_true = np.argmax(y_test, axis=1)
+
+    acc = accuracy_score(y_pred, y_true)
+
+    cm = confusion_matrix(
+        np.array([np.argmax( model.predict(X_test[i:i+1]) ) for i in range(len(X_test))]),
+        np.argmax(y_test, axis=1)
+    )
+    vgg16_tfl_nodataaugument_acc.append(acc)
+    vgg16_tfl_nodataaugument_cm.append(cm)
+    #vgg16_tfl_nodataaugument_model.append(model)
+```
+
+## 3. Results
+
