@@ -104,6 +104,10 @@ def fine_tune_for_resnet18(model):
 
 * red marked layers are trainable
 
+|VGG16|ResNet18|
+---|---
+|![Extract the frame](https://github.com/takanyanta/Comparison-of-Transfer-Learning-Technique/blob/main/VGG16.png "process1")|![Extract the frame](https://github.com/takanyanta/Comparison-of-Transfer-Learning-Technique/blob/main/ResNet18.png "process1")|
+
 ### 3-3. Prepair Datasets
 
 * Resize images size as (224, 224, 3).
