@@ -311,7 +311,7 @@ for i in range(5):
 |**Class2**|3.8|17.6|0.2|
 |**Class3**|2.6|1.0|14.0|
 
-## Conclusion
+## 5. Conclusion
 
 * For VGG16, Data Augmentatation improves its accuracy
 * For VGG16, Fine Tuning has a bad effect on its accuracy.(Is this because of local optima?)
