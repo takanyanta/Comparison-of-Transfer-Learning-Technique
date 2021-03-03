@@ -227,16 +227,81 @@ for i in range(5):
 
 ### 4-1. Case 1(VGG16, Transfer Learning, non-Data Augmentated)
 
+* Accuracy:**0.759322033898305**
+
+|-|Class1|Class2|Class3|
+---|---|---|---
+|**Class1**|13.0|1.6|2.4|
+|**Class2**|7.4|18.6|1.4|
+|**Class3**|0.6|0.8|13.2|
+
+
 ### 4-2. Case 2(VGG16, Transfer Learning, Data Augmentated)
+
+* Accuracy:**0.776271186440678**
+
+|-|Class1|Class2|Class3|
+---|---|---|---
+|**Class1**|14.2|1.8|3.2|
+|**Class2**|4.6|18.0|0.2|
+|**Class3**|2.2|1.2|13.6|
 
 ### 4-3. Case 3(VGG16, Fine Tuning, non-Data Augmentated)
 
+* Accuracy:**0.39661016949152544**
+
+|-|Class1|Class2|Class3|
+---|---|---|---
+|**Class1**|7.4|5.0|4.2|
+|**Class2**|13.6|18.0|0.2|
+|**Class3**|2.2|1.2|13.6|
+
 ### 4-4. Case 4(VGG16, Fine Tuning, Data Augmentated)
+
+* Accuracy:**0.4610169491525424**
+
+|-|Class1|Class2|Class3|
+---|---|---|---
+|**Class1**|8.8|5.6|4.6|
+|**Class2**|11.4|15.4|9.4|
+|**Class3**|0.8|0.0|3.0|
 
 ### 4-5. Case 5(ResNet18, Transfer Learning, non-Data Augmentated)
 
+* Accuracy:**0.7118644067796611**
+
+|-|Class1|Class2|Class3|
+---|---|---|---
+|**Class1**|13.4|3.0|4.4|
+|**Class2**|6.8|17.6|1.6|
+|**Class3**|0.8|0.4|11.0|
+
 ### 4-6. Case 6(ResNet18, Transfer Learning, Data Augmentated)
+
+* Accuracy:**0.7084745762711864**
+
+|-|Class1|Class2|Class3|
+---|---|---|---
+|**Class1**|12.6|2.4|4.0|
+|**Class2**|5.4|17.2|1.0|
+|**Class3**|3.0|1.4|12.0|
 
 ### 4-7. Case 7(ResNet18, Fine Tuning, non-Data Augmentated)
 
+* Accuracy:**0.7152542372881354**
+
+|-|Class1|Class2|Class3|
+---|---|---|---
+|**Class1**|12.6|4.4|2.8|
+|**Class2**|4.6|15.8|0.4|
+|**Class3**|3.8|0.8|13.8|
+
 ### 4-8. Case 8(ResNet18, Fine Tuning, Data Augmentated)
+
+* Accuracy:**0.7830508474576272**
+
+|-|Class1|Class2|Class3|
+---|---|---|---
+|**Class1**|14.6|2.4|2.8|
+|**Class2**|3.8|17.6|0.2|
+|**Class3**|2.6|1.0|14.0|
