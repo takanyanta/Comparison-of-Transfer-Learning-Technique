@@ -221,5 +221,22 @@ for i in range(5):
     #vgg16_tfl_nodataaugument_model.append(model)
 ```
 
-## 3. Results
+## 4. Results
 
+* Be careful that **accuracy_score** and **confusion_matrix** are averaged.
+
+### 4-1. Case 1(VGG16, Transfer Learning, non-Data Augmentated)
+
+### 4-2. Case 2(VGG16, Transfer Learning, Data Augmentated)
+
+### 4-3. Case 3(VGG16, Fine Tuning, non-Data Augmentated)
+
+### 4-4. Case 4(VGG16, Fine Tuning, Data Augmentated)
+
+### 4-5. Case 5(ResNet18, Transfer Learning, non-Data Augmentated)
+
+### 4-6. Case 6(ResNet18, Transfer Learning, Data Augmentated)
+
+### 4-7. Case 7(ResNet18, Fine Tuning, non-Data Augmentated)
+
+### 4-8. Case 8(ResNet18, Fine Tuning, Data Augmentated)
