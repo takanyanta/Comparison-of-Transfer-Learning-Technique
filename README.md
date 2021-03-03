@@ -224,6 +224,7 @@ for i in range(5):
 ## 4. Results
 
 * Be careful that **accuracy_score** and **confusion_matrix** are averaged.
+* Class1:C3PO, Class2:Chewbacca, Class3:R2D2
 
 ### 4-1. Case 1(VGG16, Transfer Learning, non-Data Augmentated)
 
@@ -305,3 +306,9 @@ for i in range(5):
 |**Class1**|14.6|2.4|2.8|
 |**Class2**|3.8|17.6|0.2|
 |**Class3**|2.6|1.0|14.0|
+
+## Conclusion
+
+* For VGG16, Data Augmentatation improves its accuracy
+* For VGG16, Fine Tuning has a bad effect on its accuracy.(Is this because of local optima?)
+* For ResNet18, Fine Tuning has a good effect on its accuracy.
